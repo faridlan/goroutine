@@ -6,6 +6,11 @@ import (
 	"time"
 )
 
+func GiveMeResponse(channel chan string) {
+	time.Sleep(2 * time.Second)
+	channel <- "Faridlan Nul Hakim"
+}
+
 func GetNumber(number int) {
 	fmt.Println("Number", number)
 }
